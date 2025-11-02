@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // avec var on peu declarer plusieurs variables de meme nom dans un meme bloc
+          /*
+        function test1()
+        {
+          if (true) {
+            var x = 2;
+            var x = 3;
+            console.log(x);// 3
+          }
+        }
+        test1();
+        */
+        /* Les variables declarees a l'interieur d'un bloc {}
+        avec var sont disponibles depuis l'exterieur du bloc
+        */
+        /*function test2()
+        {
+          if (true) {
+            var y = 3;
+            console.log(y);
+          }
+        }
+        test2();
+        */
+       function test3()
+        {
+            var y = 5;
+          if (true) {
+            var y = 3;
+          }
+            console.log(y);
+
+        }
+        test3();
+    </script>
+</body>
+</html>

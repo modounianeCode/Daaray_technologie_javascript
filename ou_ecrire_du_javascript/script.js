@@ -4,4 +4,8 @@ function changerTest() {
         }
 function change(){
     document.getElementsByTagName("h1")[0].innerHTML = "call to action";
+    let a = 3;// variable locale
+    var b = 10;//variable globale
+    const pi = 3.14;
+    const i = 3.14;
 }
