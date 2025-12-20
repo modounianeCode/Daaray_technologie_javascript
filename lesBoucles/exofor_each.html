@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Liste des noms</h3>
+    <p id="nom"></p>
+    <h3>Liste des prenoms</h3>
+    <p id="prenom"></p>
+    <h3>Liste des adresses</h3>
+    <p id="adresses"></p>
+    <script>
+        const tabPersonnes=[
+            {nom : 'Ibou',prenom : 'sow', adresse : 'dakar'},
+            {nom : 'Abdou',prenom : 'sarr', adresse : 'tambacounda'},
+            {nom : 'Fatou',prenom : 'sane', adresse : 'kolda'},
+            {nom : 'diokhane',prenom : 'diop', adresse : 'kaolack'}
+        ]
+        let listeNoms="";
+        let listepreNoms="";
+        let listeAdresses="";
+        tabPersonnes.forEach((elememt,index,tableau)=>{
+            listeNoms+=index +"- "+ elememt.nom +"<br>";
+            listepreNoms+=index +"- "+ elememt.prenom +"<br>";
+            listeAdresses+=index +"- "+ elememt.adresse+"<br>";
+        });
+        document.getElementById('nom').innerHTML=listeNoms;
+        document.getElementById('prenom').innerHTML=listepreNoms;
+        document.getElementById('adresses').innerHTML=listeAdresses;
+    </script>
+</body>
+</html>

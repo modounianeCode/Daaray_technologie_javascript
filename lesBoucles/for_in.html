@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo">
+
+     </p>
+     <script>
+        const personne ={
+            prenom : "Modou",
+            nom : "Niane",
+            age : "22",
+        }
+        let text = "";
+        for (const propriete in personne) {            
+            text+=personne[propriete] + ", ";
+        }
+        document.getElementById('demo').innerHTML = text;
+     </script>
+     <!--for in pour parcourir les propriets d'un objet-->
+</body>
+</html>

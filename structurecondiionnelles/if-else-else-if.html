@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="bonjour">Bonne journee</p>
     <script>
-    let a ;
+   /* let a ;
     a=parseInt(prompt("Entrez un nombre:"));
     if (a > 0) {
         alert(a+" est un nombre positif");
@@ -15,7 +16,43 @@
         alert(`${a} est un nombre negatif`);
     } else {
         alert("a est egal a zero");
+    }*/
+    /*let c = prompt("Entrez le premier nombre:");
+    let d = prompt("Entrez le deuxieme nombre:");
+    c=parseFloat(c);
+    d=parseFloat(d);
+    if(c>d){
+     let resultat = somme(c, d);
+       alert(`La somme de ${c} et ${d} est egale a ${resultat}`);
     }
+    else{
+        let resultat = produit(c, d);
+       alert(`Le produit de ${c} et ${d} est egale a ${resultat}`);
+    }
+    //alert("La somme de " + c + " et " + d + " est egale a " + resultat);
+    alert(`La somme de ${c} et ${d} est egale a ${resultat}`);
+    function somme(x,y) {
+        return x + y;
+    }
+    function produit(x,y) {
+        return x * y;
+    }
+        */
+    if(new Date().getHours() < 18) {
+        document.getElementById("bonjour").innerHTML = "Bonne journee";
+    } else {
+        document.getElementById("bonjour").innerHTML = "Bonne soiree";
+    } 
+    const heure = new Date().getHours();
+    let salutation;
+    if (heure < 10) {
+        salutation = "Bonne matinée";
+    } else if (heure < 20) {
+        salutation = "Bonne journée";
+    } else {
+        salutation = "Bonne soirée";
+    } 
+    document.getElementById("bonjour").innerHTML = salutation; 
     </script>
 </body>
 </html>

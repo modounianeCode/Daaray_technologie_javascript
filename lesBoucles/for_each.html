@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1 id="each"></h1>
+    <script>
+        const tab=[45,12,9,16,20];
+        let text = "";
+        tab.forEach(myfunction);
+        document.getElementById('demo').innerHTML=text;
+        //functon de rappel
+        function myfunction(valeur,index,taboriginal){
+            text+= `${valeur + 10 } <br> `;
+        }
+        text="";
+        let array=[19,'modou','niane','etudiant'];
+        array.forEach(myfunction);
+        document.getElementById('each').innerHTML=text;
+        function myfunction(donnee){
+            text+=`${donnee}  `
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="creer">
+           <!--<h1 id="test">Allah is the greatest</h1>--> 
+        <button onclick="creer()">Creer element</button>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>&copy;2025 - tous droits reserves</p>
+    </footer>
+    <script>
+        function creer(){
+        let cours=['maths','physique','svt'];
+        let container= document.getElementById("creer");
+        let li=document.createElement("li");
+        li.textContent=cours[i];
+        container.appendChild(li);
+        for(let i=0;i<cours.length;i++)
+          alert(cours[i]);
+        console.log(li);
+        }
+    </script>
+</body>
+</html>

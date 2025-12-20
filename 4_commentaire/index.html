@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
     <!--<p>je suis du senegal</p>-->
     <h1 id="mod">Modou niane informatique</h1>
-    <button onclick="text()">Modou</button>
+    <button onclick="text()">change du texte</button>
     <script>
         function text(){
-        document.getElementById("mod").innerHTML = "Modou Niane from Senegal";
+       let change= document.getElementById("mod").innerHTML = "Modou Niane from Senegal";
+        change.style.color="red";
         }
     </script>
 </body>
